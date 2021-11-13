@@ -21,16 +21,14 @@ After install all the packages, make sure you have Firefox installed in your com
 
 The next step is to download the Firefox GeckoDriver in your computer (remember in which folder you place the GeckoDriver)
 
-Then you should go to the 
-
-
-
+Then you should go to the terminal again and execute the command below
 
 ```
-sentences-25-04-2020.csv
+
 ```
 
-And that is it. You can import in your Anki using the csv file.
+And that is it. Your Firefox browser should open and automatically execute the test cases for "email login" and 
+"phone number login" feature files.
 
 ## How it is going to work
 

@@ -10,14 +10,14 @@ def before_all(context):
 
 
 def after_step(context, step):
-    # FUNCTION TO ACTIVATE IPDB DEBUGGER EVERYTIME AN ERROR OCCURS
+    # method to activate ipdb debugger everytime an error occurs
     if BEHAVE_DEBUG_ON_ERROR and step.status == "failed":
         import ipdb
         ipdb.post_mortem(step.exc_traceback)
 
 
 def before_feature(context, feature):
-    # FUNCTION TO AUTORETRY THE WHOLE FEATURE OR SCENARIO IF IT FAILS
+    # method to autoretry the whole feature or scenario if it fails
     for scenario in feature.walk_scenarios():
         if "autoretry" in scenario.effective_tags:
             patch_scenario_with_autoretry(scenario, max_attempts=3)
