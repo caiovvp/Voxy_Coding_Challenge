@@ -1,36 +1,30 @@
-# Anki Sentence Maker
+# Voxy WebStage Automated Tests
 
-This project is part of a selection process for a sopt of Automation Tester in the Voxy team. This project contains a set of set
-Anki Sentence Maker is a personal project that has helped me increase my vocabulary in english, and it stemmed from a matter of preference in how I import my sentences on Anki.
+This project is part of a selection process for a sopt of Automation Tester in the Voxy team. This project contains a set of test cases for the Returning Login flow for Voxy’s platform located at: https://web-stage.voxy.com/v2/#/login. This test is set to run on both Windows OS and Linux distributions which have a Firefox Web browser installed.
 
-## Requirements
+## Requirements to run the Automate Test Script
 
 * [Python 3](https://www.python.org/downloads/)
 * [pip](https://pypi.org/project/pip/)
-* Firefox [GeckoDriver]()
+* [Firefox Web Browser](https://www.mozilla.org/pt-BR/firefox/new/)
+* [Firefox GeckoDriver for Windows](https://sourceforge.net/projects/geckodriver.mirror/files/v0.30.0/geckodriver-v0.30.0-win64.zip/download) or [Firefox GeckoDriver for Linux](https://sourceforge.net/projects/geckodriver.mirror/files/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz.asc/download)
 
 ## Getting started
 
-Go to the directory where requirements.txt is located and run 
+Go to the directory where requirements.txt is located and run the command below in your terminal
 
 ```
 pip install -r requirements.txt
 ```
 
-After install all the packages, you need to install 
+After install all the packages, make sure you have Firefox installed in your computer, if not, install it.
 
-```
-python3 main.py desecrate meaning
-```
+The next step is to download the Firefox GeckoDriver in your computer (remember in which folder you place the GeckoDriver)
 
-In case of look expressions up separated by spaces, wrap it up with quotation marks
-> Example: a means to an end
+Then you should go to the 
 
-```
-python3 main.py desecrate "a means to and end" meaning
-```
 
-The script will try to find these words, and it is going to save into the root folder in the format below
+
 
 ```
 sentences-25-04-2020.csv
@@ -40,7 +34,7 @@ And that is it. You can import in your Anki using the csv file.
 
 ## How it is going to work
 
-* User will give a list of words
+* After you right-click on the ".feature" file you should see an option called "", click it.
 * The script will look it up in a variety of dictionaries
 * The script will create a .csv file with rows in the format below
 
