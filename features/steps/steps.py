@@ -25,7 +25,6 @@ def step_impl(context, input):
 def step_impl(context, input):
     click_on_btn(context, input)
 
-
 @then('login button is not clickable')
 def step_impl(context):
     login_button = find_input(context.browser, "login_form_submit_button")
@@ -35,7 +34,6 @@ def step_impl(context):
 def step_impl(context):
     login_button = find_input(context.browser, "login_form_submit_button")
     button_clickable(context, "login_form_submit_button")
-
 
 @then('show message <{message}> on <{web_ele}>')
 def step_impl(context, message, web_ele):
@@ -60,3 +58,7 @@ def step_impl(context, input_name, value):
 @then('wait for <{seconds}> seconds')
 def step_impl(context, seconds):
     wait_for(seconds)
+
+@then('website translates to English')
+def step_impl(context):
+    assert_text(context, 'How would you like to get started')

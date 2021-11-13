@@ -14,7 +14,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 # -- function that instances that the browser is chrome and that it quits once the test is over
 def browser_firefox(context):
     # -- set test suite to run on local machine firefox (PLACE THE PATH OF YOUR GECKODRIVER.EXE DOWN BELOW)
-    context.browser = Firefox(executable_path='C:\Users\caio_\Selenium Webdriver\geckodriver.exe')
+    context.browser = Firefox(executable_path='C:\Selenium WebDriver\geckodriver.exe')
 
     yield context.browser
     context.browser.quit()
@@ -152,12 +152,6 @@ def wait_for(seconds):
     time.sleep(float(seconds))
 
 
-# -- change the attribute of a web_ele
-def change_attr(context, input, attr_name, attr_value):
-    web_ele = find_input(context.browser, input)
-    context.browser.execute_script("""arguments[0].setAttribute({}, {})""".format(attr_name, attr_value), web_ele)
-
-
 def button_unclickable(context, input):
     try:
         time.sleep(0.5)
@@ -172,3 +166,8 @@ def button_clickable(context, input):
         context.browser.find_element_by_id(input)
     except NoSuchElementException as e:
         raise e
+
+
+def assert_text(context, text):
+    title_content = context.browser.find_element_by_class_name('login-form__title')
+    assert text in title_content

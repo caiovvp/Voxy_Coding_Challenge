@@ -1,3 +1,4 @@
+# coding:utf-8
 from behave import *
 from behave.contrib.scenario_autoretry import patch_scenario_with_autoretry
 
