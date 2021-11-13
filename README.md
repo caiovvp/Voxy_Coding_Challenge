@@ -1,12 +1,13 @@
 # Anki Sentence Maker
 
-This project is part of a selection process for a sopt of Automation Tester in the Voxy team. 
+This project is part of a selection process for a sopt of Automation Tester in the Voxy team. This project contains a set of set
 Anki Sentence Maker is a personal project that has helped me increase my vocabulary in english, and it stemmed from a matter of preference in how I import my sentences on Anki.
 
 ## Requirements
 
 * [Python 3](https://www.python.org/downloads/)
 * [pip](https://pypi.org/project/pip/)
+* Firefox [GeckoDriver]()
 
 ## Getting started
 
@@ -16,7 +17,7 @@ Go to the directory where requirements.txt is located and run
 pip install -r requirements.txt
 ```
 
-After install all the packages, you can run the main.py file passing the arguments
+After install all the packages, you need to install 
 
 ```
 python3 main.py desecrate meaning
