@@ -9,29 +9,29 @@ Feature: Log in into the website using the phone number login type.
 
     Scenario: Larger phone number
       When type more numbers than the mask is showing
-      Then 'Continuar' button should stay disabled
+      Then 'Continue' button should stay disabled
       And phone number input should display red 'x' sign
 
     Scenario: Shorter phone number
       When type less numbers than the mask is showing
-      Then 'Continuar' button should stay disabled
+      Then 'Continue' button should stay disabled
       And phone number input should display red 'x' sign
 
     Scenario: Invalid phone number
       When type characters other than numbers in the input box
-      Then 'Continuar' button should stay disabled
+      Then 'Continue' button should stay disabled
       And phone number input should display red 'x' sign
 
     Scenario: Unregistered valid phone number
       When type a valid number for the country selected
-      Then 'Continuar' button should become clickable
-      When click on 'Continuar' button
+      Then 'Continue' button should become clickable
+      When click on 'Continue' button
       Then show message saying the account was not found
 
     Scenario: Registered valid phone number
       When type a valid number for the country selected
-      Then 'Continuar' button should become clickable
-      When click on 'Continuar' button
+      Then 'Continue' button should become clickable
+      When click on 'Continue' button
       Then password input is shown to the user
       When user types password correctly
       And click on 'Login' button
