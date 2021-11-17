@@ -1,6 +1,6 @@
 # Voxy WebStage Automated Tests
 
-This project is part of a selection process for a sopt of Automation Tester in the Voxy team. This project contains a set of test cases for the Returning Login flow for Voxy’s platform located at: https://web-stage.voxy.com/v2/#/login. This test is set to run on both Windows OS and Linux distributions which have a Firefox Web browser installed.
+This project is part of a selection process for a spot of Automation Tester in the Voxy team. This project contains a set of test cases for the Returning Login flow for Voxy’s platform located at: https://web-stage.voxy.com/v2/#/login. This test is set to run on both Windows OS and Linux distributions which have a Firefox Web browser installed.
 
 ## Requirements to run the Automate Test Script
 
